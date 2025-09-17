@@ -1,0 +1,951 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <title>Oldentic - Your Memories Provider</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="NewDev Maroc">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="description"
+        content="We connect travelers with authentic cultural, sportive, and gastronomic experiences, designed and hosted by local communities.">
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <!-- google fonts preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <!-- style sheets and font icons  -->
+    <link rel="stylesheet" href="css/vendors.min.css" />
+    <link rel="stylesheet" href="css/icon.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/responsive.min.css" />
+    <link rel="stylesheet" href="demos/branding-studio/branding-studio.css" />
+
+
+    <style>
+        * {
+            font-family: 'Cairo', sans-serif;
+        }
+
+        :root {
+
+            --base-color: #532435 !important;
+        }
+    </style>
+</head>
+
+<body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#2d2c2b"
+    class="overflow-x-hidden custom-cursor">
+    <!-- start cursor -->
+    <div class="cursor-page-inner">
+        <div class="circle-cursor circle-cursor-inner"></div>
+        <div class="circle-cursor circle-cursor-outer"></div>
+    </div>
+    <!-- end cursor -->
+    <!-- start header -->
+    <header>
+        <!-- start navigation -->
+        <nav
+            class="navbar navbar-expand-lg header-light bg-white border-bottom border-color-transparent-dark-very-light disable-fixed">
+            <div class="container-fluid">
+                <div class="col-auto">
+                    <a class="navbar-brand" href="./" aria-label="logo">
+                        <img src="images/demo-branding-studio-logo-black.png"
+                            data-at2x="images/demo-branding-studio-logo-black@2x.png" alt="" class="default-logo">
+                        <img src="images/demo-branding-studio-logo-black.png"
+                            data-at2x="images/demo-branding-studio-logo-black@2x.png" alt="" class="alt-logo">
+                        <img src="images/demo-branding-studio-logo-black.png"
+                            data-at2x="images/demo-branding-studio-logo-black@2x.png" alt="" class="mobile-logo">
+                    </a>
+                </div>
+                <div class="col-auto menu-order left-nav">
+                    <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation" id="close-navbar-toggler">
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="#home" class="nav-link" aria-label="link">Home</a></li>
+                            <li class="nav-item"><a href="#about" class="nav-link" aria-label="link">About</a></li>
+                            <li class="nav-item"><a href="#experiences-categories" class="nav-link"
+                                    aria-label="link">Experiences</a></li>
+                            <li class="nav-item"><a href="#trusted-by" class="nav-link" aria-label="link">Trusted by</a>
+                            </li>
+                            <li class="nav-item"><a href="#why" class="nav-link" aria-label="link">Why Oldentic?</a></li>
+                            <li class="nav-item"><a href="https://forms.gle/hYEkjPr2zmcaFxjKA" class="nav-link" aria-label="link">Contact</a></li>
+                        </ul>
+                        <script>
+                            //a script that close the navbar immediately when an element of the navbar is clicked(each .nav-link clicked should trigger .close-navbar-toggler click)
+                            document.addEventListener('DOMContentLoaded', () => {
+                            document.querySelectorAll('.nav-link').forEach(link => {
+                                link.addEventListener('click', () => {
+                                    console.log('clicked');
+                                        document.getElementById('close-navbar-toggler').click();
+                                    });
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+                <div class="col-auto ms-auto d-none d-lg-flex">
+                    <div class="header-icon">
+                        <span class="text-dark-gray d-none d-xl-block"> <span
+                                class="text-decoration-line-bottom fw-600"> 🚀 Coming Soon</span></span>
+                        <div class="header-button ms-25px">
+                            <a href="https://forms.gle/R9KWzJAuSALGuK5k8" target="_blank"
+                                class="btn border-1 btn-transparent-light-gray btn-medium btn-rounded left-icon btn-switch-text"
+                                aria-label="link">
+                                <span>
+                                    <span><i class="feather icon-feather-mail"></i></span>
+                                    <span class="btn-double-text" data-text="Get in touch">Get in touch</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- end navigation -->
+    </header>
+    <!-- end header -->
+    <!-- start banner -->
+    <section id="home" style="margin-top: 143px;"
+        class="p-0 top-space-margin pe-4 ps-4 xxl-pe-2 xxl-ps-2 lg-pe-0 lg-ps-0 lg-pt-70px md-pt-50px overflow-hidden">
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-xxl-4 col-xl-5 col-lg-8 text-center text-xl-start"
+                    data-anime='{ "el": "childs", "opacity": [0, 1], "translateY": [100, 0], "staggervalue": 300, "duration": 1200, "easing": "easeOutCubic" }'>
+                    <h1 class="text-dark-gray ls-minus-3px mb-50px sm-mb-30px"><span class="highlight-separator pb-0"
+                            data-shadow-animation="true" data-animation-delay="1500">Your Memories Provider<span><img
+                                    src="images/highlight-separator-01.svg" alt=""></span></span></h1>
+                    <p> Choose the experiences first, and we will drive you to the destinations.
+                    </p>
+                    <div
+                        class="d-flex align-items-center justify-content-center justify-content-xl-start flex-sm-row flex-column">
+                        <a href="https://forms.gle/JYwUmUuoGvJmYjQ3A" target="_blank"
+                            class="btn btn-large btn-dark-gray btn-box-shadow btn-rounded btn-switch-text left-icon xs-mb-30px">
+                            <span>
+                                <span><i class="feather icon-feather-mail"></i></span>
+                                <span class="btn-double-text" data-text="Subscribe to our Newsletter">Subscribe to our
+                                    Newsletter</span>
+                            </span>
+                        </a>
+                        <a href="https://forms.gle/hYEkjPr2zmcaFxjKA"
+                            class="position-relative d-inline-block text-center rounded-circle video-icon-box video-icon-medium popup-youtube ms-15px xs-ms-0"
+                            aria-label="video-link">
+                            <span class="video-icon border border-1 border-color-transparent-dark-very-light me-10px">
+                                <i class="bi bi-file-earmark-text text-base-color fs-24"></i>
+                            </span>
+                            <span class="fs-18 fw-500 text-dark-gray">Contact us</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xxl-5 col-xl-3 col-md-7 position-relative text-center d-flex justify-content-center align-items-center lg-pt-50px"
+                    data-anime='{ "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                    <img class="position-absolute top-25px z-index-minus-2 animation-rotation-slow sm-w-80"
+                        src="images/demo-branding-studio-bg-01.jpg" alt="">
+                    <img src="images/transparent.png" alt="">
+                    <div
+                        class="position-absolute right-30px xl-right-minus-50px md-right-0px bottom-150px d-md-flex flex-column align-items-center justify-content-center">
+                        <img src="images/demo-branding-studio-circle-01.png" class="position-absolute" alt="">
+                        <img src="images/demo-branding-studio-circle-02.png" class="animation-rotation" alt="">
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-4 col-md-5 xl-pt-50px d-flex flex-column align-items-end"
+                    data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                    <div class="d-flex align-items-end p-25px cover-background border-radius-15px h-200px w-300px sm-w-100 mb-20px"
+                        style="background-image: url('images/demo-branding-studio-video-img.jpg')">
+                        <div class="d-flex align-items-center">
+                            <a href="https://www.instagram.com/p/C1ztoa_tstz/" target="_blank"
+                                class="position-relative d-inline-block text-center bg-white border border-2 border-color-white rounded-circle video-icon-box video-icon-medium "
+                                aria-label="video-link">
+                                <span>
+                                    <span class="video-icon">
+                                        <i class="bi bi-play-fill text-base-color fs-24"></i>
+                                        <span class="video-icon-sonar">
+                                            <span class="video-icon-sonar-bfr bg-white opacity-9"></span>
+                                        </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <span class="fs-18 lh-22 fw-500 text-white ms-10px">Unforgettable experiences, when you need
+                                it.</span>
+                        </div>
+                    </div>
+                    <div class="border-radius-15px bg-white w-300px sm-w-100 bg-white box-shadow-extra-large">
+                        <div class="d-flex align-items-center ps-25px pe-25px pt-20px pb-20px">
+                            <div>
+                                <span class="d-block lh-18">Followed by</span>
+                                <span class="fs-18 fw-500 text-dark-gray d-block">Beloved Followers</span>
+                            </div>
+                            <div
+                                class="border-radius-30px text-white bg-base-color ps-15px pe-15px pt-2px pb-2px fs-18 lh-32 fw-500 ls-minus-1px d-inline-flex align-items-center ms-auto">
+                                <i class="bi bi-star-fill fs-14 me-5px"></i><span class="flex-shrink-0">5.0</span>
+                            </div>
+                        </div>
+                        <div
+                            class="d-flex align-items-center pt-10px pb-10px ps-5px pe-5px border-top border-color-transparent-dark-very-light">
+                            <img src="images/demo-branding-studio-02.png" alt="">
+                            <div class="ms-5px">
+                                <h5 class="fw-700 text-dark-gray mb-0">6K<sup>+</sup></h5>
+                                <div class="fs-14 lh-16 text-dark-gray">Happy Followers</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end banner -->
+
+
+    <!-- start section -->
+    <section
+        class="p-0 pe-4 ps-4 xxl-pe-2 xxl-ps-2 lg-pe-0 lg-ps-0 mt-2 sm-mt-50px border-bottom border-top border-color-transparent-dark-very-light overflow-hidden">
+        <div class="container-fluid"
+            data-anime='{ "perspective": [1200,1200], "scale": [1.1, 1], "rotateX": [-90, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 600, "easing": "easeOutQuad" }'>
+            <div class="row row-cols-1 row-cols-xxl-3 row-cols-md-1">
+                <div
+                    class="col pt-40px pb-40px ps-60px pe-60px xxl-ps-20px xxl-pe-20px border-end xs-border-end-0 xl-border-bottom border-color-transparent-dark-very-light">
+                    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
+                        <h2 class="h1 fw-500 ls-minus-3px text-dark-gray flex-shrink-0 mb-0 me-15px md-me-0">40<sup
+                                class="top-minus-20px text-base-color">%</sup></h2>
+                        <span class="fs-20 fw-500 text-dark-gray d-block">40% Experiential Travelers.</span>
+                    </div>
+                </div>
+                <div
+                    class="col pt-40px pb-40px ps-60px pe-60px xxl-ps-20px xxl-pe-20px border-end xl-border-end-0 xl-border-bottom border-color-transparent-dark-very-light">
+                    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
+                        <h2 class="h1 fw-500 ls-minus-3px text-dark-gray flex-shrink-0 mb-0 me-15px md-me-0">17.4<sup
+                                class="top-minus-20px text-base-color">M</sup></h2>
+                        <span class="fs-20 fw-500 text-dark-gray d-block">17.4M Visitors Morocco 2024.</span>
+                    </div>
+                </div>
+                <div
+                    class="col pt-40px pb-40px ps-60px pe-60px xxl-ps-20px xxl-pe-20px border-end xs-border-end-0 xs-border-bottom border-color-transparent-dark-very-light">
+                    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
+                        <h2 class="h1 fw-500 ls-minus-3px text-dark-gray flex-shrink-0 mb-0 me-15px md-me-0">70<sup
+                                class="top-minus-20px text-base-color">%</sup></h2>
+                        <span class="fs-20 fw-500 text-dark-gray d-block">70% Sustainable Tourism Demand.</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+
+
+
+
+
+
+
+
+    <!-- start section -->
+    <section id="about">
+        <div class="container">
+            <div class="row justify-content-center justify-content-xl-start">
+                <div
+                    class="col-xl-4 col-lg-10 d-flex align-items-xl-start align-items-center flex-column lg-mb-50px text-center text-xl-start">
+                    <div class="fs-11 lh-26 fw-500 text-uppercase text-white bg-base-color border-radius-30px ps-15px pe-15px mb-20px d-inline-block"
+                        data-anime='{"translateY": [30, 0], "opacity": [0,1], "duration": 800, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        About Oldentic</div>
+                    <h2 class="fw-500 text-dark-gray mb-25px"
+                        data-anime='{"translateY": [30, 0], "perspective": [400,400], "scale": [1.1, 1], "rotateX": [-80, 0], "opacity": [0,1], "duration": 800, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        About Oldentic <span class="highlight-separator pb-0" data-shadow-animation="true"
+                            data-animation-delay="1500"><span><img src="images/highlight-separator-02.svg"
+                                    alt=""></span></span></h2>
+                    <p style="text-align: justify;"
+                        data-anime='{"el": "lines", "translateY": [30, 0], "perspective": [400,400], "scale": [1.1, 1], "rotateX": [-80, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+
+                        <span class="highlight-separator pb-0" data-shadow-animation="true"
+                            data-animation-delay="1500"><span><img src="images/highlight-separator-02.svg"
+                                    alt=""></span></span>
+                        Oldentic is a Moroccan startup dedicated to experiential tourism.
+
+
+                        We connect travelers with authentic cultural, sportive, and gastronomic experiences, designed
+                        and hosted by local communities.
+                        <span class="highlight-separator pb-0" data-shadow-animation="true"
+                            data-animation-delay="1500"><span><img src="images/highlight-separator-02.svg"
+                                    alt=""></span></span>
+                        Our vision is to make Morocco the top destination for meaningful and memorable journeys, where
+                        every experience creates lasting memories.
+                        <span class="highlight-separator pb-0" data-shadow-animation="true"
+                            data-animation-delay="1500"><span><img src="images/highlight-separator-02.svg"
+                                    alt=""></span></span>
+                        With a sustainable and human-centered approach, Oldentic bridges travelers and locals through
+                        stories, traditions, and passions.
+                    </p>
+                    <span class="highlight-separator pb-0" data-shadow-animation="true"
+                        data-animation-delay="1500"><span><img src="images/highlight-separator-02.svg"
+                                alt=""></span></span>
+
+                </div>
+                <div class="col-xl-2 col-md-4 offset-xl-1 sm-mb-30px"
+                    data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    <img class="border-radius-15px w-100" src="images/demo-branding-studio-04.jpg" alt="">
+                    <div
+                        class="d-block bg-base-color ps-15 pt-16 pb-13 sm-p-10 border-radius-15px mt-30px text-center text-md-start">
+                        <span class="fs-80 lh-80 fw-500 text-white ls-minus-3px">260<sup
+                                class="top-minus-40px fs-40">+</sup></span>
+                        <span class="text-white lh-20 d-inline-block sm-w-100">Experiences <br> Hosted</span>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-md-8"
+                    data-anime='{ "el": "childs", "translateY": [100, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    <figure class="position-relative m-0">
+                        <img class="border-radius-15px w-100" src="images/demo-branding-studio-03.jpg" alt="">
+                        <!-- <figcaption
+                            class="position-absolute text-center border-radius-15px right-30px bottom-30px ps-30px pe-30px blur-box bg-white-transparent">
+                            <h2 class="fs-60 mx-auto mb-0 fw-600 text-dark-gray mt-20px">4.9</h2>
+                            <div class="text-base-color ls-2px lh-20">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i>
+                            </div>
+                            <span class="text-dark-gray mb-20px d-inline-block">r</span>
+                        </figcaption> -->
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+
+
+
+
+    <!-- start section -->
+    <section id="experiences-categories"
+        class="py-0 ps-6 pe-6 xl-ps-3 xl-pe-3 md-ps-0 md-pe-0 position-relative overflow-hidden">
+        <div class="bg-base-color h-100 position-absolute top-0 start-0 z-index-minus-1 lg-w-100"
+            data-bottom-top="width:10%" data-center-top="width:100%;"></div>
+        <div class="container-fluid">
+            <div class="row justify-content-end g-0 flex-row-reverse">
+                <div
+                    class="col-xl-5 col-lg-6 pt-7 pb-7 md-pb-5 sm-pt-50px sm-pb-50px tab-style-09 d-flex justify-content-between flex-column border-start md-border-start-0 border-color-transparent-white-very-light">
+                    <div
+                        class="ps-12 md-ps-4 sm-ps-0 pb-10 md-pb-5 position-relative z-index-9 text-center text-md-start">
+                        <span class="fs-24 lh-30 text-white">Our Experience Categories<br><span
+                                class="highlight-separator pb-0" data-shadow-animation="true"
+                                data-animation-delay="1500">stories for brands.<span><img
+                                        src="images/highlight-separator-05-white.svg" alt=""></span></span></span>
+                        <!-- start tab navigation -->
+                        <ul
+                            class="nav nav-tabs border-0 flex-column align-items-start justify-content-start fs-45 lg-fs-30 mt-9 md-mt-5">
+                            <li class="nav-item p-0 mb-20px lg-mb-10px"><a data-bs-toggle="tab" href="#tab_four1"
+                                    class="nav-link active">Culture & Heritage</a></li>
+                            <li class="nav-item p-0 mb-20px lg-mb-10px"><a class="nav-link" data-bs-toggle="tab"
+                                    href="#tab_four2">Sports & Well-being</a></li>
+                            <li class="nav-item p-0 mb-20px lg-mb-10px"><a class="nav-link" data-bs-toggle="tab"
+                                    href="#tab_four3">Gastronomy & Handicrafts</a></li>
+                            <li class="nav-item p-0"><a class="nav-link" data-bs-toggle="tab" href="#tab_four4">
+                                    Nature & Local Life</a></li>
+                        </ul>
+                        <!-- end tab navigation -->
+                    </div>
+                    <div
+                        class="border-top border-color-transparent-white-very-light ps-12 md-ps-4 sm-ps-0 text-center text-md-start">
+                        <span class="fs-20 d-block fw-500 mb-10px text-white pt-10 md-pt-5 sm-pt-30px">At Oldentic, we
+                            curate authentic experiences across Morocco.
+                            story.</span>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 pe-7 pt-7 pb-7 md-pt-0 md-ps-4 md-pe-4 sm-ps-0 sm-pe-0 sm-pb-50px">
+                    <div class="tab-content">
+                        <!-- start tab content -->
+                        <div class="tab-pane interactive-banner-style-01 fade in active show" id="tab_four1">
+                            <figure class="m-0 position-relative hover-box border-radius-15px overflow-hidden">
+                                <img class="w-100" src="images/demo-branding-studio-05.jpg" alt="" />
+                                <div
+                                    class="position-absolute top-0px left-0px w-100 h-100 bg-gradient-dark-transparent opacity-2">
+                                </div>
+                                <figcaption class="w-100 h-100 d-flex flex-column align-items-center p-40px">
+                                    <div class="position-relative d-flex flex-column h-100 z-index-1">
+
+                                        <a href="javascript:void(0);" class="text-white d-block mt-auto">Guided medina
+                                            tours, traditional music nights, artisanal workshops</a>
+                                    </div>
+                                    <div class="box-overlay bg-gradient-black-bottom-transparent"></div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <!-- end tab content -->
+                        <!-- start tab content -->
+                        <div class="tab-pane interactive-banner-style-01 fade in" id="tab_four2">
+                            <figure class="m-0 position-relative hover-box border-radius-15px overflow-hidden">
+                                <img class="w-100" src="images/demo-branding-studio-06.jpg" alt="" />
+                                <div
+                                    class="position-absolute top-0px left-0px w-100 h-100 bg-gradient-dark-transparent opacity-2">
+                                </div>
+                                <figcaption class="w-100 h-100 d-flex flex-column align-items-center p-40px">
+                                    <div class="position-relative d-flex flex-column h-100 z-index-1">
+
+                                        <a href="javascript:void(0);" class="text-white d-block mt-auto">Surf camps,
+                                            hiking, futsal matches, yoga retreats</a>
+                                    </div>
+                                    <div class="box-overlay bg-gradient-black-bottom-transparent"></div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <!-- end tab content -->
+                        <!-- start tab content -->
+                        <div class="tab-pane interactive-banner-style-01 fade in" id="tab_four3">
+                            <figure class="m-0 position-relative hover-box border-radius-15px overflow-hidden">
+                                <img class="w-100" src="images/demo-branding-studio-07.jpg" alt="" />
+                                <div
+                                    class="position-absolute top-0px left-0px w-100 h-100 bg-gradient-dark-transparent opacity-2">
+                                </div>
+                                <figcaption class="w-100 h-100 d-flex flex-column align-items-center p-40px">
+                                    <div class="position-relative d-flex flex-column h-100 z-index-1">
+
+                                        <a href="javascript:void(0);" class="text-white d-block mt-auto">Cooking
+                                            classes, food tours, pottery and zellige workshops</a>
+                                    </div>
+                                    <div class="box-overlay bg-gradient-black-bottom-transparent"></div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <!-- end tab content -->
+                        <!-- start tab content -->
+                        <div class="tab-pane interactive-banner-style-01 fade in" id="tab_four4">
+                            <figure class="m-0 position-relative hover-box border-radius-15px overflow-hidden">
+                                <img class="w-100" src="images/demo-branding-studio-08.jpg" alt="" />
+                                <div
+                                    class="position-absolute top-0px left-0px w-100 h-100 bg-gradient-dark-transparent opacity-2">
+                                </div>
+                                <figcaption class="w-100 h-100 d-flex flex-column align-items-center p-40px">
+                                    <div class="position-relative d-flex flex-column h-100 z-index-1">
+
+
+                                        <a href="javascript:void(0);" class="text-white d-block mt-auto">Desert trips,
+                                            eco-villages, farm stays, community encounters</a>
+                                    </div>
+                                    <div class="box-overlay bg-gradient-black-bottom-transparent"></div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <!-- end tab content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+
+
+
+
+
+
+
+
+
+    <!-- start section -->
+    <section class="pt-0 pb-15px lg-pb-50px overflow-hidden" id="trusted-by">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-12 text-center opacity-8">
+                    <div class="fs-200 lh-200 lg-fs-150 sm-w-100 ls-minus-3px text-gradient-light-gray-white text-white-space-nowrap"
+                        data-bottom-top="transform: translate3d(-150px, 0px, 0px);"
+                        data-top-bottom="transform: translate3d(50px, 0px, 0px);">Trusted by</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+
+    <!-- start section -->
+    <section class="pt-0">
+        <div class="container">
+
+
+            <div class="row align-items-center justify-content-center mt-6 sm-mt-50px">
+
+                <div class="col-12 col-xl-7 col-lg-9">
+                    <div class="row row-cols-1 row-cols-md-4 text-center justify-content-center clients-style-05">
+                        <!-- start client item -->
+                        <div class="col sm-mb-40px">
+                            <div class="client-box">
+                                <a href="javascript:void(0);"><img src="images/Logo_UN_Tourism.svg.png"
+                                        class="h-100px w-150px" alt="" /></a>
+                            </div>
+                        </div>
+                        <!-- end client item -->
+                        <!-- start client item -->
+                        <div class="col sm-mb-40px">
+                            <div class="client-box">
+                                <a href="javascript:void(0);"><img src="images/logo_ministere_tour_dark-1.png"
+                                        class="h-70px w-180px" alt="" /></a>
+                            </div>
+                        </div>
+                        <!-- end client item -->
+                        <!-- start client item -->
+                        <div class="col sm-mb-40px">
+                            <div class="client-box">
+                                <a href="javascript:void(0);"><img
+                                        src="images/2022-03-26-095139.652310logo-MJCC-1-1.png" class="h-100px w-150px"
+                                        alt="" /></a>
+                            </div>
+                        </div>
+                        <!-- end client item -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+
+
+
+    <!-- start section -->
+    <section class="pt-0" id="why">
+        <div class="container">
+            <div class="row justify-content-center mb-45px md-mb-30px">
+                <div class="col-xl-7 col-lg-8 text-center"
+                    data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    <div
+                        class="fs-11 lh-26 fw-500 text-uppercase text-white bg-base-color border-radius-30px ps-15px pe-15px mb-20px d-inline-block">
+                        Why Oldentic?</div>
+                    <h2 class="fw-500 text-dark-gray">Why Choose <span class="highlight-separator pb-0"
+                            data-shadow-animation="true" data-animation-delay="1500">Oldentic?<span><img
+                                    src="images/highlight-separator-03.svg" alt=""></span></span></h2>
+                    <p>Because your journey deserves more than just a trip — it deserves authentic memories.</p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 justify-content-center"
+                data-anime='{ "el": "childs", "translateY": [20, 0], "opacity": [0,1], "duration": 600, "delay": 300, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                <!-- start services box style -->
+                <div class="col services-box-style-08 md-mb-30px">
+                    <div
+                        class="bg-gradient-misty-rose box-shadow-quadruple-large-hover border-radius-15px position-relative overflow-hidden pe-50px ps-50px pt-40px pb-40px xl-p-40px lg-p-30px md-p-40px xs-p-30px h-430px d-flex">
+                        <span
+                            class="bg-bright-turquoise h-400px w-400px border-radius-100 opacity-2 d-inline-block position-absolute left-minus-50px top-minus-70px z-index-0"></span>
+                        <div class="position-relative z-index-1 d-flex flex-column">
+                            <a href="javascript:void(0);"
+                                class="fs-22 fw-500 text-dark-gray d-block mb-10px">Authenticity First</a>
+                            <p class="w-90 xl-w-100">Experiences designed and hosted by locals, rooted in Moroccan
+                                traditions.</p>
+                            <a href="javascript:void(0);"
+                                class="mt-auto h-50px w-50px rounded-circle bg-base-color d-flex align-items-center justify-content-center box-shadow-large box-shadow-hover"
+                                aria-label="link"><i
+                                    class="feather icon-feather-arrow-up-right fs-20 text-white"></i></a>
+                        </div>
+                        <img class="position-absolute right-0px bottom-0px" src="images/authenticity.png" alt=""
+                            width="150px" height="150px">
+                    </div>
+                </div>
+                <!-- end services box style -->
+                <!-- start services box style -->
+                <div class="col services-box-style-08 md-mb-30px">
+                    <div
+                        class="bg-gradient-misty-rose box-shadow-quadruple-large-hover border-radius-15px position-relative overflow-hidden pe-50px ps-50px pt-40px pb-40px xl-p-40px lg-p-30px md-p-40px xs-p-30px h-430px d-flex">
+                        <span
+                            class="bg-bright-turquoise h-400px w-400px border-radius-100 opacity-2 d-inline-block position-absolute left-minus-50px top-minus-70px z-index-0"></span>
+                        <div class="position-relative z-index-1 d-flex flex-column">
+                            <a href="javascript:void(0);" class="fs-22 fw-500 text-dark-gray d-block mb-10px">Community
+                                Impact</a>
+                            <p class="w-90 xl-w-100">Each booking supports artisans, athletes, and local communities.
+                            </p>
+                            <a href="javascript:void(0);"
+                                class="mt-auto h-50px w-50px rounded-circle bg-base-color d-flex align-items-center justify-content-center box-shadow-large box-shadow-hover"
+                                aria-label="link"><i
+                                    class="feather icon-feather-arrow-up-right fs-20 text-white"></i></a>
+                        </div>
+                        <img class="position-absolute right-0px bottom-0px" src="images/community.png" alt=""
+                            width="150px" height="150px">
+                    </div>
+                </div>
+                <!-- end services box style -->
+                <!-- start services box style -->
+                <div class="col services-box-style-08">
+                    <div
+                        class="bg-gradient-misty-rose box-shadow-quadruple-large-hover border-radius-15px position-relative overflow-hidden pe-50px ps-50px pt-40px pb-40px xl-p-40px lg-p-30px md-p-40px xs-p-30px h-430px d-flex">
+                        <span
+                            class="bg-bright-turquoise h-400px w-400px border-radius-100 opacity-2 d-inline-block position-absolute left-minus-50px top-minus-70px z-index-0"></span>
+                        <div class="position-relative z-index-1 d-flex flex-column">
+                            <a href="javascript:void(0);"
+                                class="fs-22 fw-500 text-dark-gray d-block mb-10px">Sustainable Tourism</a>
+                            <p class="w-90 xl-w-100">We promote eco-friendly and responsible travel experiences.</p>
+                            <a href="javascript:void(0);"
+                                class="mt-auto h-50px w-50px rounded-circle bg-base-color d-flex align-items-center justify-content-center box-shadow-large box-shadow-hover"
+                                aria-label="link"><i
+                                    class="feather icon-feather-arrow-up-right fs-20 text-white"></i></a>
+                        </div>
+                        <img class="position-absolute right-0px bottom-0px" src="images/eco-tourism.png" alt=""
+                            width="150px" height="150px">
+                    </div>
+                </div>
+                <!-- end services box style -->
+                <!-- start services box style -->
+                <div class="col services-box-style-08">
+                    <div
+                        class="bg-gradient-misty-rose box-shadow-quadruple-large-hover border-radius-15px position-relative overflow-hidden pe-50px ps-50px pt-40px pb-40px xl-p-40px lg-p-30px md-p-40px xs-p-30px h-430px d-flex">
+                        <span
+                            class="bg-bright-turquoise h-400px w-400px border-radius-100 opacity-2 d-inline-block position-absolute left-minus-50px top-minus-70px z-index-0"></span>
+                        <div class="position-relative z-index-1 d-flex flex-column">
+                            <a href="javascript:void(0);" class="fs-22 fw-500 text-dark-gray d-block mb-10px">Seamless
+                                Booking</a>
+                            <p class="w-90 xl-w-100">Easy access, secure reservations, and curated journeys tailored for
+                                you.</p>
+                            <a href="javascript:void(0);"
+                                class="mt-auto h-50px w-50px rounded-circle bg-base-color d-flex align-items-center justify-content-center box-shadow-large box-shadow-hover"
+                                aria-label="link"><i
+                                    class="feather icon-feather-arrow-up-right fs-20 text-white"></i></a>
+                        </div>
+                        <img class="position-absolute right-0px bottom-0px" src="images/booking.png" alt=""
+                            width="150px" height="150px">
+                    </div>
+                </div>
+                <!-- end services box style -->
+            </div>
+            <div class="row mt-4 md-mt-50px">
+                <div class="col-12 text-center"
+                    data-anime='{ "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                    <span class="fs-20 text-dark-gray">Easy access, secure reservations, and curated journeys tailored
+                        for you.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+
+
+    <!-- start section -->
+    <section class="position-relative overflow-hidden md-pt-0">
+        <img src="images/demo-real-estate-07.png" alt=""
+            class="position-absolute left-100px top-50px z-index-minus-1 d-none d-lg-block"
+            data-bottom-top="transform: translate3d(80px, 0px, 0px);"
+            data-top-bottom="transform: translate3d(-180px, 0px, 0px);" />
+        <img src="images/demo-real-estate-08.png" alt=""
+            class="position-absolute right-100px top-100px z-index-minus-1 d-none d-lg-block"
+            data-bottom-top="transform:scale(1.4, 1.4) translate3d(0px, 0px, 0px);"
+            data-top-bottom="transform:scale(1, 1) translate3d(-400px, 0px, 0px);" />
+        <div class="container h-100">
+            <div class="row g-0">
+                <div class="col-lg-5 text-end md-mb-50px">
+                    <figure class="position-relative m-0">
+                        <img src="images/demo-branding-studio-16.jpg" class="w-100 border-radius-15px" alt="">
+                    </figure>
+                </div>
+                <div
+                    class="col-lg-6 offset-lg-1 col-md-12 pt-3 md-pt-0 border-start md-border-start-0 border-color-transparent-dark-very-light">
+                    <div class="swiper testimonials-style-14 position-relative swiper-dark-pagination h-100 text-center text-md-start"
+                        data-slider-options='{ "autoHeight": true, "loop": true, "allowTouchMove": true, "autoplay": { "delay": 4000, "disableOnInteraction": false }, "pagination": { "el": ".swiper-pagination-bullets-05", "clickable": true, "dynamicBullets": false }, "effect": "slide" }'>
+                        <div class="swiper-wrapper h-100">
+                            <!-- start text slider item -->
+                            <div class="swiper-slide h-100 d-flex flex-column pb-50px">
+                                <div class="ps-14 md-ps-0" >
+                                    <a href="javascript:void(0);" style="display: flex; justify-content: center;align-items: center;" ><img src="images/CAF-logo-2009.png"
+                                            class="h-40px mb-15px d-block sm-mx-auto" alt=""></a>
+                                    <span class="fs-24 d-block text-dark-gray w-100 xl-w-100 lg-pb-30px" style="display: flex; justify-content: center;align-items: center;">
+                                        <script src="./js/simplyCountdown.js"></script>
+                                        <link rel="stylesheet" href="./css/Countdownjsdefault.css">
+                                        <style>
+                                            @media (min-width: 1024px) {
+                                                .simply-countdown>.simply-section {
+                                                    width: 160px;
+                                                    height: 90px;
+                                                    padding: 2rem;
+                                                }
+                                            }
+
+
+
+                                            @media (min-width: 640px) {
+                                                .simply-countdown>.simply-section {
+                                                    width: 150px;
+                                                    height: 75px;
+                                                    padding: 1.75rem;
+                                                }
+                                            }
+
+                                            .simply-countdown>.simply-section {
+                                                width: 150px;
+                                                height: 65px;
+                                                padding: 1.5rem;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                background: rgba(255, 255, 255, 0.9);
+                                                border: 1px solid rgba(226, 232, 240, 0.8);
+                                                border-radius: 1rem;
+                                                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03), 0 0 0 1px rgba(0, 0, 0, 0.02);
+                                                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                                                backdrop-filter: blur(10px);
+                                            }
+                                        </style>
+                                        <script>
+                                            document.addEventListener("DOMContentLoaded", function () {
+                                                simplyCountdown("#mycountdown", {
+                                                    year: 2025,
+                                                    month: 12,
+                                                    day: 21,
+                                                });
+                                            });
+
+                                        </script>
+
+                                        <div id="mycountdown" class="simply-countdown"></div>
+
+
+
+
+
+
+
+
+
+
+                                    </span>
+                                </div>
+
+                            </div>
+                            <!-- end text slider item -->
+
+                        </div>
+                        <div class="d-flex justify-content-center justify-content-lg-start position-relative">
+                            <!-- start slider pagination -->
+                            <div
+                                class="swiper-pagination swiper-pagination-clickable swiper-pagination-style-2 swiper-pagination-bullets-05 text-center text-md-start ps-14 md-ps-0 bottom-0">
+                            </div>
+                            <!-- end slider pagination -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+
+
+
+
+    <!-- start section -->
+    <section class="position-relative overflow-hidden">
+        <div class="container-fluid p-0">
+            <div class="row g-0 position-relative">
+                <div class="col-12 marquee-rotate-down z-index-minus-1">
+                    <div class="swiper swiper-width-auto text-center bg-base-color pt-10px pb-10px outside-box-right-1 outside-box-left-1"
+                        data-slider-options='{ "slidesPerView": "auto", "spaceBetween":40, "centeredSlides": true, "speed": 20000, "loop": true, "pagination": { "el": ".slider-four-slide-pagination-2", "clickable": false }, "allowTouchMove": false, "autoplay": { "delay":1, "disableOnInteraction": false }, "navigation": { "nextEl": ".slider-four-slide-next-2", "prevEl": ".slider-four-slide-prev-2" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'>
+                        <div class="swiper-wrapper marquee-slide">
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <div class="fs-60 fw-300 text-white pt-10px pb-10px"> 🚀 Coming Soon – Be Part of the Journey
+                                </div>
+                            </div>
+                            <!-- end slider item -->
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <div class="fs-60 fw-300 text-white pt-10px pb-10px"> 🚀 Coming Soon – Be Part of the Journey
+                                </div>
+                            </div>
+                            <!-- end slider item -->
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <div class="fs-60 fw-300 text-white pt-10px pb-10px"> 🚀 Coming Soon – Be Part of the Journey
+                                </div>
+                            </div>
+                            <!-- end slider item -->
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <div class="fs-60 fw-300 text-white pt-10px pb-10px"> 🚀 Coming Soon – Be Part of the Journey
+                                </div>
+                            </div>
+                            <!-- end slider item -->
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <div class="fs-60 fw-300 text-white pt-10px pb-10px"> 🚀 Coming Soon – Be Part of the Journey
+                                </div>
+                            </div>
+                            <!-- end slider item -->
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <div class="fs-60 fw-300 text-white pt-10px pb-10px"> 🚀 Coming Soon – Be Part of the Journey
+                                </div>
+                            </div>
+                            <!-- end slider item -->
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <div class="fs-60 fw-300 text-white pt-10px pb-10px"> 🚀 Coming Soon – Be Part of the Journey
+                                </div>
+                            </div>
+                            <!-- end slider item -->
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <div class="fs-60 fw-300 text-white pt-10px pb-10px"> 🚀 Coming Soon – Be Part of the Journey
+                                </div>
+                            </div>
+                            <!-- end slider item -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 marquee-rotate-up ">
+                    <div class="swiper swiper-width-auto text-center bg-extra-medium-gray pt-10px pb-10px outside-box-right-1 outside-box-left-1"
+                        data-slider-options='{ "slidesPerView": "auto", "spaceBetween":40, "centeredSlides": true, "speed": 20000, "loop": true, "pagination": { "el": ".slider-four-slide-pagination-2", "clickable": false }, "allowTouchMove": false, "autoplay": { "delay":1, "disableOnInteraction": false, "reverseDirection": true }, "navigation": { "nextEl": ".slider-four-slide-next-2", "prevEl": ".slider-four-slide-prev-2" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'>
+                        <div class="swiper-wrapper marquee-slide">
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <div class="fs-60 fw-300 text-dark-gray pt-10px pb-10px">Oldentic will soon launch the first Moroccan platform fully dedicated to authentic cultural, sportive, and gastronomic experiences.
+                                    Don’t miss the opportunity to be among the first explorers.</div>
+                            </div>
+                            <!-- end slider item -->
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <div class="fs-60 fw-300 text-dark-gray pt-10px pb-10px">Oldentic will soon launch the first Moroccan platform fully dedicated to authentic cultural, sportive, and gastronomic experiences.
+                                    Don’t miss the opportunity to be among the first explorers.</div>
+                              
+                            </div>
+                            <!-- end slider item -->
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <div class="fs-60 fw-300 text-dark-gray pt-10px pb-10px">Oldentic will soon launch the first Moroccan platform fully dedicated to authentic cultural, sportive, and gastronomic experiences.
+                                    Don’t miss the opportunity to be among the first explorers.</div>
+                            </div>
+                            <!-- end slider item -->
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <div class="fs-60 fw-300 text-dark-gray pt-10px pb-10px">Oldentic will soon launch the first Moroccan platform fully dedicated to authentic cultural, sportive, and gastronomic experiences.
+                                    Don’t miss the opportunity to be among the first explorers.</div>
+                            </div>
+                            <!-- end slider item -->
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <div class="fs-60 fw-300 text-dark-gray pt-10px pb-10px">Oldentic will soon launch the first Moroccan platform fully dedicated to authentic cultural, sportive, and gastronomic experiences.
+                                    Don’t miss the opportunity to be among the first explorers.</div>
+                            </div>
+                            <!-- end slider item -->
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <div class="fs-60 fw-300 text-dark-gray pt-10px pb-10px">Oldentic will soon launch the first Moroccan platform fully dedicated to authentic cultural, sportive, and gastronomic experiences.
+                                    Don’t miss the opportunity to be among the first explorers.</div>
+                            </div>
+                            <!-- end slider item -->
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <div class="fs-60 fw-300 text-dark-gray pt-10px pb-10px">Oldentic will soon launch the first Moroccan platform fully dedicated to authentic cultural, sportive, and gastronomic experiences.
+                                    Don’t miss the opportunity to be among the first explorers.</div>
+                            </div>
+                            <!-- end slider item -->
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <div class="fs-60 fw-300 text-dark-gray pt-10px pb-10px">Oldentic will soon launch the first Moroccan platform fully dedicated to authentic cultural, sportive, and gastronomic experiences.
+                                    Don’t miss the opportunity to be among the first explorers.</div>
+                            </div>
+                            <!-- end slider item -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+
+    <!-- start section -->
+    <section class="p-0">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-12 elements-social social-icon-style-11">
+                    <ul class="fs-18 dark border-top border-color-transparent-dark-very-light"
+                        data-anime='{ "el": "childs", "translateX": [-30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <li>
+                            <a class="facebook" href="https://www.facebook.com/profile.php?id=100089210503108" target="_blank">
+                                <span class="fw-500">Facebook</span>
+                                <i class="feather icon-feather-arrow-up-right text-base-color ms-5px"></i>
+                            </a>
+                        </li>
+                     
+                        <li>
+                            <a class="threads" href="https://www.threads.com/@oldentic" target="_blank">
+                                <span class="fw-500">Threads</span>
+                                <i class="feather icon-feather-arrow-up-right text-base-color ms-5px"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="instagram" href="https://www.instagram.com/oldentic/?hl=en" target="_blank">
+                                <span class="fw-500">Instagram</span>
+                                <i class="feather icon-feather-arrow-up-right text-base-color ms-5px"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+    <!-- start footer -->
+    <footer class="ps-4 pe-4 xxl-pe-2 xxl-ps-2 lg-pe-0 lg-ps-0 cover-background sm-pt-50px sm-pb-50px"
+        style="background-image: url('images/demo-branding-studio-footer-bg-img.jpg')">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="fs-275 fw-300 ls-1px text-white"><span class="text-base-color">©</span> 2025 Oldentic
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center pt-4 sm-pt-35px text-center text-md-start">
+                <!-- start footer logo -->
+                <div class="col-xl-2 col-md-4 lg-mb-30px">
+                    <a href="./" class="footer-logo d-inline-block" aria-label="logo"><img
+                            src="images/demo-branding-studio-logo-white.png"
+                            data-at2x="images/demo-branding-studio-logo-white@2x.png" alt=""></a>
+                </div>
+                <!-- end footer logo -->
+                <!-- start footer address -->
+                <div class="col-xl-2 col-md-4 last-paragraph-no-margin lg-mb-30px">
+                    <p class="w-90 xxl-w-100 lg-w-80 md-w-100"><span class="text-white mb-5px d-block">Oldentic
+                            </span>Sixieme Etg 18 Av Allal Ben Abdallah, Quartier Lipodrom - Fès-Médina Morocco</p>
+                </div>
+                <!-- end footer address -->
+
+                <!-- start footer social -->
+                <div class="col-xl-2 col-md-4">
+                    <ul>
+                        <li><a href="./">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experiences-categories">Experiences</a></li>
+                    </ul>
+                </div>
+                <!-- end footer social -->
+                <!-- start footer menu -->
+                <div class="col-xl-2 col-md-4">
+                    <ul>
+                        <li><a href="#trusted-by">Trusted by</a></li>
+                        <li><a href="#why">Why Oldentic?</a></li>
+                    </ul>
+                </div>
+                <!-- end footer menu -->
+                <!-- start footer back to top -->
+                <div class="col-xl-2 col-md-4">
+                    <a class="scroll-top text-base-color" aria-label="scroll" href="#">Back to top <i
+                            class="feather icon-feather-arrow-up text-base-color align-middle"></i></a>
+                </div>
+                <!-- end footer back to top -->
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- start  progressive blur -->
+    <div class="crafto-progressive-blur crafto-progressive-blur-bottom" blur-bottom="yes"
+        style="--progressive-blur-height:15vh"></div>
+    <!-- end  progressive blur -->
+    <!-- javascript libraries -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/vendors.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+ 
+</body>
+
+</html>
